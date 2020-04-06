@@ -1,3 +1,5 @@
+"use strict";
+
 const apiToken = "OfcJM5gSdU7WvdVm1KiXsJhFpWLCgi9m5GoaatM2";
 const searchUrl = "https://developer.nps.gov/api/v1/parks";
 
@@ -15,7 +17,7 @@ function displayResults(responseJson) {
     $(".results-list").append(
       `<li>Park Name: ${responseJson.data[i].fullName}</li>
       <li>Description: ${responseJson.data[i].description}</li>
-      <li>URL: ${responseJson.data[i].url}</li>
+      <li>URL: <a href="${responseJson.data[i].url}"> Visit Park Website</a></li>
       <li>States: ${responseJson.data[i].states}</li>`
     );
   }
