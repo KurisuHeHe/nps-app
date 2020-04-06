@@ -31,7 +31,6 @@ function getParks(state, limit = 10) {
   const queryString = formatQueryParams(params);
   const url = searchUrl + "?" + queryString;
 
-  console.log(url);
   fetch(url)
     .then(response => {
       if (response.ok) {
