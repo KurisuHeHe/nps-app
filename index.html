@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>nps-app</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>nps-app</h1>
+      <p>Interested in finding a new park?</p>
+      <form>
+        <label for="state">By which states?</label>
+        <input type="text" id="state" name="stateSearch" value="NY" />
+        <label for="maxResults">Max Results</label>
+        <input type="text" id="maxResults" name="max-results" value="10" />
+        <input type="submit" value="Search" />
+      </form>
+      <p class="error-message"></p>
+      <section class="results hidden">
+        <h2>Search Results</h2>
+        <ul class="results-list"></ul>
+      </section>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
